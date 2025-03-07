@@ -9,11 +9,9 @@ import java.awt.geom.*;
  *
  * This movement can be initiated by repeated calls to the "move" method.
  * 
- * @author Michael Kölling (mik)
- * @author David J. Barnes
- * @author Bruce Quig
+ * @author Damian Nunez
  *
- * @version 2016.02.29
+ * @version 2025.03.07
  */
 
 public class BouncingBall
@@ -82,7 +80,8 @@ public class BouncingBall
         xPosition +=2;
 
         // check if it has hit the ground
-        if (yPosition >= (groundPosition - diameter) && ySpeed > 0) {
+        if (yPosition >= (groundPosition - diameter) && ySpeed > 0) 
+        {
             yPosition = (int)(groundPosition - diameter);
             ySpeed = -ySpeed + ballDegradation; 
         }

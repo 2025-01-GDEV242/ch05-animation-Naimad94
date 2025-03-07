@@ -4,8 +4,8 @@ import java.awt.Color;
  * Class BallDemo - a short demonstration showing animation with the 
  * Canvas class. 
  *
- * @author Michael Kölling and David J. Barnes
- * @version 2016.02.29
+ * @author Damian Nunez
+ * @version 2025.03.07
  */
 
 public class BallDemo   
@@ -41,12 +41,14 @@ public class BallDemo
 
         // make them bounce
         boolean finished =  false;
-        while (!finished) {
+        while (!finished) 
+        {
             myCanvas.wait(50);           // small delay
             ball.move();
             ball2.move();
             // stop once ball has travelled a certain distance on x axis
-            if(ball.getXPosition() >= 550 || ball2.getXPosition() >= 550) {
+            if(ball.getXPosition() >= 550 || ball2.getXPosition() >= 550) 
+            {
                 finished = true;
             }
         }
