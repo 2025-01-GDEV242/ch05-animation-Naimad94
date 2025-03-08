@@ -63,13 +63,6 @@ public class BallDemo
         int roof = 100; //position of the roof line.
         int leftWall = 50; //Position of the left wall.
         
-        myCanvas.setForegroundColor(Color.BLACK); // color.
-        myCanvas.drawLine(50, ground, 550, ground);
-        
-        myCanvas.setForegroundColor(Color.BLACK);
-        myCanvas.drawLine(50, roof, 550, roof);
-        
-        myCanvas.setForegroundColor(Color.BLACK);
-        myCanvas.drawLine(50, leftWall, 100, leftWall);
+        drawBox(ground, ceiling, leftWall, rightWall); //draw the box.
     }
 }
